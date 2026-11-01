@@ -113,6 +113,7 @@ function SelectContent({
   alignItemWithTrigger = false,
   surface = "glass",
   variant = "default",
+  positionerClassName,
   ...props
 }: SelectPrimitive.Popup.Props &
   Pick<
@@ -128,6 +129,8 @@ function SelectContent({
     surface?: "glass" | "solid"
     /** `picker` — compact builder-picker rows (44px, body-sm, lime check). */
     variant?: "default" | "picker"
+    /** Extra classes for the positioner, e.g. `z-q-popover` to stack above a dialog. */
+    positionerClassName?: string
   }) {
   return (
     <SelectPrimitive.Portal>
@@ -138,7 +141,7 @@ function SelectContent({
         alignOffset={alignOffset}
         collisionPadding={collisionPadding}
         alignItemWithTrigger={alignItemWithTrigger}
-        className="isolate z-q-dropdown"
+        className={cn("isolate z-q-dropdown", positionerClassName)}
       >
         <SelectPrimitive.Popup
           data-slot="select-content"
