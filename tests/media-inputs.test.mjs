@@ -171,3 +171,34 @@ test("reference mode rejects empty input and never ignores incompatible media", 
   assert.throws(() => toPlatform(plane(seedance25, { audio: items("audio", 1) }, { inputMode: "frames" })), /not supported/i);
   assert.throws(() => toPlatform(plane(seedance25, {}, { inputMode: "unknown" })), /input mode/i);
 });
+const { genjutsuRestyle, genjutsuMotionTransfer, genjutsuObjectSwap, GENJUTSU_RESTYLE_PRESETS } = await import("../generation/catalog/models/genjutsu.ts");
+test("Genjutsu Restyle sends the preset UUID, source video, references, and resolution", () => {
+  const { path, body } = toPlatform(plane(genjutsuRestyle, { source: items("source", 1), reference: items("reference", 5) }, { settings: { stylePreset: "Comic 3D", resolution: "1080p" } }));
+  assert.equal(path, "higgsfield/genjutsu/restyle/v1.0");
+  assert.equal(body.video_url, items("source", 1)[0].url);
+  assert.equal(body.preset_id, GENJUTSU_RESTYLE_PRESETS["Comic 3D"]);
+  assert.equal(body.image_urls.length, 5);
+  assert.equal(body.resolution, "1080p");
+  assert.equal(body.prompt, "A cinematic scene");
+  assert.throws(() => toPlatform(plane(genjutsuRestyle, { source: items("source", 1), reference: items("reference", 6) }, { settings: { stylePreset: "Comic 3D" } })), /maximum/i);
+});
+test("Genjutsu Restyle requires a source video and accepts an empty prompt without references", () => {
+  assert.throws(() => toPlatform(plane(genjutsuRestyle, {}, { settings: { stylePreset: "Comic 3D" } })), /source video/i);
+  const { body } = toPlatform(plane(genjutsuRestyle, { source: items("source", 1) }, { prompt: { text: "  " }, settings: { stylePreset: "Comic 3D" } }));
+  assert.deepEqual(body.image_urls, []);
+  assert.equal(body.prompt, "");
+  assert.throws(() => toPlatform(plane(genjutsuRestyle, { source: items("source", 1) }, { settings: { stylePreset: "Not a preset" } })), /style preset/i);
+});
+test("Genjutsu Motion Transfer and Object Swap require a source video plus 1–8 image references", () => {
+  for (const [model, path] of [[genjutsuMotionTransfer, "higgsfield/genjutsu/motion-transfer/v1.0"], [genjutsuObjectSwap, "higgsfield/genjutsu/object-swap/v1.0"]]) {
+    assert.throws(() => toPlatform(plane(model, { reference: items("reference", 1) })), /source video/i);
+    assert.throws(() => toPlatform(plane(model, { source: items("source", 1) })), /image references/i);
+    assert.throws(() => toPlatform(plane(model, { source: items("source", 1), reference: items("reference", 9) })), /maximum/i);
+    const request = toPlatform(plane(model, { source: items("source", 1), reference: items("reference", 8) }));
+    assert.equal(request.path, path);
+    assert.equal(request.body.video_url, items("source", 1)[0].url);
+    assert.equal(request.body.image_urls.length, 8);
+    assert.equal(request.body.resolution, "720p");
+    assert.ok(!("preset_id" in request.body));
+  }
+});
