@@ -100,7 +100,12 @@ function SettingRow({
           <SelectTrigger size="sm" className="w-auto min-w-32">
             <SelectValue />
           </SelectTrigger>
-          <SelectContent variant="picker" surface="solid" align="end">
+          <SelectContent
+            variant="picker"
+            surface="solid"
+            align="end"
+            positionerClassName="z-q-popover"
+          >
             {field.values.map((v) => (
               <SelectItem key={v} value={v}>
                 {v}
