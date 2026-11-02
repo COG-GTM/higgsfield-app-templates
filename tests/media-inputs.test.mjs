@@ -17,6 +17,7 @@ registerHooks({
 });
 const { seedance25, seedance25Edit, seedance25Extend } = await import("../generation/catalog/models/seedance-2.5.ts");
 const { seedance2 } = await import("../generation/catalog/models/seedance-2.ts");
+const { genjutsuMotionTransfer, genjutsuObjectSwap, genjutsuRestyle, GENJUTSU_RESTYLE_PRESETS } = await import("../generation/catalog/models/genjutsu.ts");
 const { toPlatform } = await import("../generation/to-platform.ts");
 const { MODELS } = await import("../generation/catalog/index.ts");
 const { MODELS: installedModels } = await import("../generation/catalog/models.generated.ts");
@@ -170,4 +171,40 @@ test("reference mode rejects empty input and never ignores incompatible media", 
   assert.throws(() => toPlatform(plane(seedance25, { start: items("start", 1) }, { inputMode: "references" })), /not supported/i);
   assert.throws(() => toPlatform(plane(seedance25, { audio: items("audio", 1) }, { inputMode: "frames" })), /not supported/i);
   assert.throws(() => toPlatform(plane(seedance25, {}, { inputMode: "unknown" })), /input mode/i);
+});
+
+test("Genjutsu motion transfer and object swap require a source video and 1-8 image references", () => {
+  for (const [model, path] of [[genjutsuMotionTransfer, "higgsfield/genjutsu/motion-transfer/v1.0"], [genjutsuObjectSwap, "higgsfield/genjutsu/object-swap/v1.0"]]) {
+    const request = toPlatform(plane(model, { source: items("source", 1), reference: items("reference", 8) }, { settings: { resolution: "1080p" } }));
+    assert.equal(request.path, path);
+    assert.deepEqual(Object.keys(request.body).sort(), ["image_urls", "prompt", "resolution", "video_url"]);
+    assert.equal(request.body.video_url, items("source", 1)[0].url);
+    assert.equal(request.body.image_urls.length, 8);
+    assert.equal(request.body.resolution, "1080p");
+    assert.throws(() => toPlatform(plane(model, { source: items("source", 1) })), /image references/i);
+    assert.throws(() => toPlatform(plane(model, { reference: items("reference", 1) })), /source video/i);
+    assert.throws(() => toPlatform(plane(model, { source: items("source", 1), reference: items("reference", 9) })), /maximum/i);
+    assert.throws(() => toPlatform(plane(model, { source: items("source", 1), reference: items("reference", 1), video: items("video", 1) })), /not supported/i);
+  }
+});
+test("Genjutsu restyle maps the preset name to its id and always sends an image_urls array", () => {
+  const settings = { preset: "Cel-Shaded CG Anime", resolution: "480p" };
+  const request = toPlatform(plane(genjutsuRestyle, { source: items("source", 1) }, { settings, prompt: { text: " Preserve the original movement. " } }));
+  assert.equal(request.path, "higgsfield/genjutsu/restyle/v1.0");
+  assert.deepEqual(request.body, {
+    video_url: items("source", 1)[0].url,
+    image_urls: [],
+    prompt: "Preserve the original movement.",
+    resolution: "480p",
+    preset_id: "c2143317-f28d-4c3c-a0b8-39bd547e08a7",
+  });
+  assert.equal(toPlatform(plane(genjutsuRestyle, { source: items("source", 1), reference: items("reference", 5) }, { settings })).body.image_urls.length, 5);
+  assert.throws(() => toPlatform(plane(genjutsuRestyle, { source: items("source", 1), reference: items("reference", 6) }, { settings })), /maximum/i);
+  assert.throws(() => toPlatform(plane(genjutsuRestyle, {}, { settings })), /source video/i);
+  assert.throws(() => toPlatform(plane(genjutsuRestyle, { source: items("source", 1) }, { settings: { ...settings, preset: "Unknown" } })), /preset/i);
+});
+test("Genjutsu restyle offers every preset with a uuid and defaults to 720p", () => {
+  assert.equal(genjutsuRestyle.settings.preset.values.length, 20);
+  for (const name of genjutsuRestyle.settings.preset.values) assert.match(GENJUTSU_RESTYLE_PRESETS[name], /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/);
+  for (const model of [genjutsuMotionTransfer, genjutsuObjectSwap, genjutsuRestyle]) assert.deepEqual(model.settings.resolution, { type: "enum", values: ["480p", "720p", "1080p"], default: "720p" });
 });
