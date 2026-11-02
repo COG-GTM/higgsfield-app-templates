@@ -1,0 +1,1188 @@
+2026-11-02T00:46:32.850553+00:00 
+2026-11-02T00:46:32.850905+00:00 > higgsfield-app-templates@0.0.1 dev /home/ubuntu/repos/higgsfield-app-templates
+2026-11-02T00:46:32.850922+00:00 > next dev
+2026-11-02T00:46:32.850933+00:00 
+2026-11-02T00:46:33.302446+00:00 ▲ Next.js 16.3.8 (Turbopack)
+2026-11-02T00:46:33.302693+00:00 - Local:         http://localhost:3000
+2026-11-02T00:46:33.302734+00:00 - Network:       http://172.16.255.2:3000
+2026-11-02T00:46:33.302828+00:00 ✓ Ready in 333ms
+2026-11-02T00:46:33.332790+00:00 ✓ Running next.config.ts took 29ms
+2026-11-02T00:46:33.877042+00:00 
+2026-11-02T00:46:50.219607+00:00  GET / 200 in 2.6s (next.js: 2.1s, proxy.ts: 148ms, application-code: 408ms)
+2026-11-02T00:46:50.695616+00:00  POST / 200 in 20ms (next.js: 3ms, proxy.ts: 5ms, application-code: 13ms)
+2026-11-02T00:46:50.695701+00:00   └─ ƒ hasPlatformCredentials() in 1ms generation/actions.ts
+2026-11-02T00:46:50.737081+00:00  POST / 200 in 10ms (next.js: 2ms, proxy.ts: 3ms, application-code: 5ms)
+2026-11-02T00:46:50.737156+00:00   └─ ƒ hasPlatformCredentials() in 0ms generation/actions.ts
+2026-11-02T00:47:10.119447+00:00  POST / 200 in 49ms (next.js: 11ms, proxy.ts: 4ms, application-code: 34ms)
+2026-11-02T00:50:08.844781+00:00  POST /api/upload 503 in 308ms (next.js: 282ms, application-code: 26ms)
+2026-11-02T00:50:50.039694+00:00 
+2026-11-02T00:50:50.039983+00:00 > higgsfield-app-templates@0.0.1 dev /home/ubuntu/repos/higgsfield-app-templates
+2026-11-02T00:50:50.040000+00:00 > next dev
+2026-11-02T00:50:50.040011+00:00 
+2026-11-02T00:50:50.388147+00:00 ▲ Next.js 16.3.8 (Turbopack)
+2026-11-02T00:50:50.388426+00:00 - Local:         http://localhost:3000
+2026-11-02T00:50:50.388480+00:00 - Network:       http://172.16.255.2:3000
+2026-11-02T00:50:50.388579+00:00 ✓ Ready in 267ms
+2026-11-02T00:50:50.415334+00:00 ✓ Running next.config.ts took 26ms
+2026-11-02T00:50:50.761108+00:00 
+2026-11-02T00:50:54.650644+00:00  GET / 200 in 484ms (next.js: 74ms, proxy.ts: 126ms, application-code: 284ms)
+2026-11-02T00:50:54.956886+00:00  POST / 200 in 27ms (next.js: 6ms, proxy.ts: 5ms, application-code: 16ms)
+2026-11-02T00:50:54.956964+00:00   └─ ƒ hasPlatformCredentials() in 2ms generation/actions.ts
+2026-11-02T00:50:55.002076+00:00  POST / 200 in 17ms (next.js: 3ms, proxy.ts: 4ms, application-code: 11ms)
+2026-11-02T00:50:55.002163+00:00   └─ ƒ hasPlatformCredentials() in 2ms generation/actions.ts
+2026-11-02T00:52:03.192207+00:00 [platform] request {
+2026-11-02T00:52:03.192287+00:00   method: 'POST',
+2026-11-02T00:52:03.192301+00:00   url: 'https://api.higgsfield.ai/files/generate-upload-url',
+2026-11-02T00:52:03.192315+00:00   body: { content_type: 'video/mp4' }
+2026-11-02T00:52:03.192324+00:00 }
+2026-11-02T00:52:03.429425+00:00 [platform] response {
+2026-11-02T00:52:03.429499+00:00   method: 'POST',
+2026-11-02T00:52:03.429512+00:00   url: 'https://api.higgsfield.ai/files/generate-upload-url',
+2026-11-02T00:52:03.429526+00:00   status: 200
+2026-11-02T00:52:03.429535+00:00 }
+2026-11-02T00:52:03.432458+00:00  POST /api/upload 200 in 573ms (next.js: 294ms, application-code: 279ms)
+2026-11-02T00:53:57.340160+00:00 [platform] request {
+2026-11-02T00:53:57.340234+00:00   method: 'POST',
+2026-11-02T00:53:57.340247+00:00   url: 'https://api.higgsfield.ai/higgsfield/genjutsu/restyle/v1.0',
+2026-11-02T00:53:57.340262+00:00   body: {
+2026-11-02T00:53:57.340273+00:00     video_url: 'https://d3snorpfx4xhv8.cloudfront.net/a4086dbb-d386-4bab-8efd-636d1f91e38e/ebf7f456-b4bc-477a-84f9-29c8f14f2cc3.mp4',
+2026-11-02T00:53:57.340287+00:00     image_urls: [],
+2026-11-02T00:53:57.340298+00:00     prompt: 'Preserve the original movement and camera composition.',
+2026-11-02T00:53:57.340311+00:00     resolution: '480p',
+2026-11-02T00:53:57.340322+00:00     preset_id: 'c2143317-f28d-4c3c-a0b8-39bd547e08a7'
+2026-11-02T00:53:57.340332+00:00   }
+2026-11-02T00:53:57.340343+00:00 }
+2026-11-02T00:53:57.572995+00:00 [platform] response {
+2026-11-02T00:53:57.573071+00:00   method: 'POST',
+2026-11-02T00:53:57.573083+00:00   url: 'https://api.higgsfield.ai/higgsfield/genjutsu/restyle/v1.0',
+2026-11-02T00:53:57.573106+00:00   status: 200,
+2026-11-02T00:53:57.573116+00:00   body: {
+2026-11-02T00:53:57.573146+00:00     status: 'queued',
+2026-11-02T00:53:57.573154+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:53:57.573165+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:53:57.573177+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel',
+2026-11-02T00:53:57.573188+00:00     expires_after: 604800
+2026-11-02T00:53:57.573198+00:00   }
+2026-11-02T00:53:57.573207+00:00 }
+2026-11-02T00:53:57.575869+00:00  POST / 200 in 249ms (next.js: 3ms, proxy.ts: 4ms, application-code: 242ms)
+2026-11-02T00:53:57.576164+00:00   └─ ƒ submitGeneration({"media":{"source":"[Array]"},"model":"genjutsu-restyle","prompt":{"text":"Preserve the original movement and camera composition."},"...":"1 item not stringified"}) in 236ms generation/actions.ts
+2026-11-02T00:54:01.606170+00:00 [platform] request {
+2026-11-02T00:54:01.606253+00:00   method: 'GET',
+2026-11-02T00:54:01.606267+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:01.606280+00:00   body: null
+2026-11-02T00:54:01.606289+00:00 }
+2026-11-02T00:54:01.832990+00:00 [platform] response {
+2026-11-02T00:54:01.833073+00:00   method: 'GET',
+2026-11-02T00:54:01.833086+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:01.833099+00:00   status: 200,
+2026-11-02T00:54:01.833108+00:00   body: {
+2026-11-02T00:54:01.833117+00:00     status: 'queued',
+2026-11-02T00:54:01.833141+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:01.833155+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:01.833166+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:01.833176+00:00   }
+2026-11-02T00:54:01.833185+00:00 }
+2026-11-02T00:54:01.836145+00:00  POST / 200 in 250ms (next.js: 2ms, proxy.ts: 11ms, application-code: 236ms)
+2026-11-02T00:54:01.836213+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 229ms generation/actions.ts
+2026-11-02T00:54:05.856816+00:00 [platform] request {
+2026-11-02T00:54:05.856898+00:00   method: 'GET',
+2026-11-02T00:54:05.856911+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:05.856926+00:00   body: null
+2026-11-02T00:54:05.856936+00:00 }
+2026-11-02T00:54:06.085986+00:00 [platform] response {
+2026-11-02T00:54:06.086103+00:00   method: 'GET',
+2026-11-02T00:54:06.086119+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:06.086148+00:00   status: 200,
+2026-11-02T00:54:06.086161+00:00   body: {
+2026-11-02T00:54:06.086173+00:00     status: 'in_progress',
+2026-11-02T00:54:06.086185+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:06.086197+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:06.086209+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:06.086221+00:00   }
+2026-11-02T00:54:06.086233+00:00 }
+2026-11-02T00:54:06.089551+00:00  POST / 200 in 245ms (next.js: 4ms, proxy.ts: 3ms, application-code: 238ms)
+2026-11-02T00:54:06.089627+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 231ms generation/actions.ts
+2026-11-02T00:54:10.106063+00:00 [platform] request {
+2026-11-02T00:54:10.106153+00:00   method: 'GET',
+2026-11-02T00:54:10.106166+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:10.106179+00:00   body: null
+2026-11-02T00:54:10.106188+00:00 }
+2026-11-02T00:54:10.342926+00:00 [platform] response {
+2026-11-02T00:54:10.343025+00:00   method: 'GET',
+2026-11-02T00:54:10.343041+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:10.343054+00:00   status: 200,
+2026-11-02T00:54:10.343063+00:00   body: {
+2026-11-02T00:54:10.343072+00:00     status: 'in_progress',
+2026-11-02T00:54:10.343081+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:10.343090+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:10.343101+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:10.343112+00:00   }
+2026-11-02T00:54:10.343122+00:00 }
+2026-11-02T00:54:10.349986+00:00  POST / 200 in 255ms (next.js: 3ms, proxy.ts: 3ms, application-code: 249ms)
+2026-11-02T00:54:10.350050+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 239ms generation/actions.ts
+2026-11-02T00:54:14.367109+00:00 [platform] request {
+2026-11-02T00:54:14.367201+00:00   method: 'GET',
+2026-11-02T00:54:14.367213+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:14.367227+00:00   body: null
+2026-11-02T00:54:14.367237+00:00 }
+2026-11-02T00:54:14.605275+00:00 [platform] response {
+2026-11-02T00:54:14.605353+00:00   method: 'GET',
+2026-11-02T00:54:14.605412+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:14.605428+00:00   status: 200,
+2026-11-02T00:54:14.605437+00:00   body: {
+2026-11-02T00:54:14.605448+00:00     status: 'in_progress',
+2026-11-02T00:54:14.605457+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:14.605466+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:14.605476+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:14.605486+00:00   }
+2026-11-02T00:54:14.605498+00:00 }
+2026-11-02T00:54:14.607690+00:00  POST / 200 in 252ms (next.js: 3ms, proxy.ts: 4ms, application-code: 246ms)
+2026-11-02T00:54:14.607756+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 241ms generation/actions.ts
+2026-11-02T00:54:18.636367+00:00 [platform] request {
+2026-11-02T00:54:18.636446+00:00   method: 'GET',
+2026-11-02T00:54:18.636460+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:18.636476+00:00   body: null
+2026-11-02T00:54:18.636487+00:00 }
+2026-11-02T00:54:18.852911+00:00 [platform] response {
+2026-11-02T00:54:18.852992+00:00   method: 'GET',
+2026-11-02T00:54:18.853005+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:18.853019+00:00   status: 200,
+2026-11-02T00:54:18.853029+00:00   body: {
+2026-11-02T00:54:18.853038+00:00     status: 'in_progress',
+2026-11-02T00:54:18.853047+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:18.853060+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:18.853074+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:18.853084+00:00   }
+2026-11-02T00:54:18.853094+00:00 }
+2026-11-02T00:54:18.855894+00:00  POST / 200 in 243ms (next.js: 3ms, proxy.ts: 4ms, application-code: 237ms)
+2026-11-02T00:54:18.855956+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 217ms generation/actions.ts
+2026-11-02T00:54:22.878654+00:00 [platform] request {
+2026-11-02T00:54:22.878735+00:00   method: 'GET',
+2026-11-02T00:54:22.878748+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:22.878763+00:00   body: null
+2026-11-02T00:54:22.878782+00:00 }
+2026-11-02T00:54:23.108176+00:00 [platform] response {
+2026-11-02T00:54:23.108267+00:00   method: 'GET',
+2026-11-02T00:54:23.108280+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:23.108295+00:00   status: 200,
+2026-11-02T00:54:23.108304+00:00   body: {
+2026-11-02T00:54:23.108313+00:00     status: 'in_progress',
+2026-11-02T00:54:23.108322+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:23.108332+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:23.108342+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:23.108352+00:00   }
+2026-11-02T00:54:23.108362+00:00 }
+2026-11-02T00:54:23.110983+00:00  POST / 200 in 244ms (next.js: 3ms, proxy.ts: 3ms, application-code: 238ms)
+2026-11-02T00:54:23.111046+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 232ms generation/actions.ts
+2026-11-02T00:54:27.133873+00:00 [platform] request {
+2026-11-02T00:54:27.133945+00:00   method: 'GET',
+2026-11-02T00:54:27.133956+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:27.133969+00:00   body: null
+2026-11-02T00:54:27.133978+00:00 }
+2026-11-02T00:54:27.366437+00:00 [platform] response {
+2026-11-02T00:54:27.366512+00:00   method: 'GET',
+2026-11-02T00:54:27.366525+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:27.366539+00:00   status: 200,
+2026-11-02T00:54:27.366549+00:00   body: {
+2026-11-02T00:54:27.366559+00:00     status: 'in_progress',
+2026-11-02T00:54:27.366569+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:27.366578+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:27.366590+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:27.366602+00:00   }
+2026-11-02T00:54:27.366612+00:00 }
+2026-11-02T00:54:27.369646+00:00  POST / 200 in 247ms (next.js: 2ms, proxy.ts: 4ms, application-code: 241ms)
+2026-11-02T00:54:27.369708+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 235ms generation/actions.ts
+2026-11-02T00:54:31.398997+00:00 [platform] request {
+2026-11-02T00:54:31.399074+00:00   method: 'GET',
+2026-11-02T00:54:31.399086+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:31.399101+00:00   body: null
+2026-11-02T00:54:31.399111+00:00 }
+2026-11-02T00:54:31.639071+00:00 [platform] response {
+2026-11-02T00:54:31.639163+00:00   method: 'GET',
+2026-11-02T00:54:31.639176+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:31.639192+00:00   status: 200,
+2026-11-02T00:54:31.639202+00:00   body: {
+2026-11-02T00:54:31.639213+00:00     status: 'in_progress',
+2026-11-02T00:54:31.639225+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:31.639236+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:31.639248+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:31.639260+00:00   }
+2026-11-02T00:54:31.639271+00:00 }
+2026-11-02T00:54:31.641200+00:00  POST / 200 in 258ms (next.js: 2ms, proxy.ts: 5ms, application-code: 251ms)
+2026-11-02T00:54:31.641266+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 243ms generation/actions.ts
+2026-11-02T00:54:35.664010+00:00 [platform] request {
+2026-11-02T00:54:35.664097+00:00   method: 'GET',
+2026-11-02T00:54:35.664112+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:35.664141+00:00   body: null
+2026-11-02T00:54:35.664153+00:00 }
+2026-11-02T00:54:35.892229+00:00 [platform] response {
+2026-11-02T00:54:35.892362+00:00   method: 'GET',
+2026-11-02T00:54:35.892382+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:35.892406+00:00   status: 200,
+2026-11-02T00:54:35.892422+00:00   body: {
+2026-11-02T00:54:35.892436+00:00     status: 'in_progress',
+2026-11-02T00:54:35.892456+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:35.892472+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:35.892491+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:35.892511+00:00   }
+2026-11-02T00:54:35.892524+00:00 }
+2026-11-02T00:54:35.896745+00:00  POST / 200 in 247ms (next.js: 3ms, proxy.ts: 4ms, application-code: 239ms)
+2026-11-02T00:54:35.896826+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 230ms generation/actions.ts
+2026-11-02T00:54:39.914682+00:00 [platform] request {
+2026-11-02T00:54:39.914772+00:00   method: 'GET',
+2026-11-02T00:54:39.914791+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:39.914821+00:00   body: null
+2026-11-02T00:54:39.914839+00:00 }
+2026-11-02T00:54:40.152568+00:00 [platform] response {
+2026-11-02T00:54:40.172081+00:00   method: 'GET',
+2026-11-02T00:54:40.172179+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:40.172199+00:00   status: 200,
+2026-11-02T00:54:40.172211+00:00   body: {
+2026-11-02T00:54:40.172221+00:00     status: 'in_progress',
+2026-11-02T00:54:40.172232+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:40.172243+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:40.172255+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:40.172266+00:00   }
+2026-11-02T00:54:40.172277+00:00 }
+2026-11-02T00:54:40.176999+00:00  POST / 200 in 275ms (next.js: 2ms, proxy.ts: 6ms, application-code: 268ms)
+2026-11-02T00:54:40.177186+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 244ms generation/actions.ts
+2026-11-02T00:54:44.206696+00:00 [platform] request {
+2026-11-02T00:54:44.206786+00:00   method: 'GET',
+2026-11-02T00:54:44.206801+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:44.206817+00:00   body: null
+2026-11-02T00:54:44.206829+00:00 }
+2026-11-02T00:54:44.429099+00:00 [platform] response {
+2026-11-02T00:54:44.429218+00:00   method: 'GET',
+2026-11-02T00:54:44.429234+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:44.429251+00:00   status: 200,
+2026-11-02T00:54:44.429262+00:00   body: {
+2026-11-02T00:54:44.429273+00:00     status: 'in_progress',
+2026-11-02T00:54:44.429286+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:44.429299+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:44.429314+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:44.429328+00:00   }
+2026-11-02T00:54:44.429349+00:00 }
+2026-11-02T00:54:44.436489+00:00  POST / 200 in 251ms (next.js: 5ms, proxy.ts: 7ms, application-code: 239ms)
+2026-11-02T00:54:44.436553+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 225ms generation/actions.ts
+2026-11-02T00:54:48.463178+00:00 [platform] request {
+2026-11-02T00:54:48.463252+00:00   method: 'GET',
+2026-11-02T00:54:48.463263+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:48.463277+00:00   body: null
+2026-11-02T00:54:48.463286+00:00 }
+2026-11-02T00:54:48.694233+00:00 [platform] response {
+2026-11-02T00:54:48.694316+00:00   method: 'GET',
+2026-11-02T00:54:48.694328+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:48.694341+00:00   status: 200,
+2026-11-02T00:54:48.694349+00:00   body: {
+2026-11-02T00:54:48.694358+00:00     status: 'in_progress',
+2026-11-02T00:54:48.694367+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:48.694376+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:48.694387+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:48.694398+00:00   }
+2026-11-02T00:54:48.694408+00:00 }
+2026-11-02T00:54:48.696583+00:00  POST / 200 in 256ms (next.js: 8ms, proxy.ts: 4ms, application-code: 244ms)
+2026-11-02T00:54:48.696641+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 235ms generation/actions.ts
+2026-11-02T00:54:52.720135+00:00 [platform] request {
+2026-11-02T00:54:52.720208+00:00   method: 'GET',
+2026-11-02T00:54:52.720221+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:52.720234+00:00   body: null
+2026-11-02T00:54:52.720243+00:00 }
+2026-11-02T00:54:52.945511+00:00 [platform] response {
+2026-11-02T00:54:52.945590+00:00   method: 'GET',
+2026-11-02T00:54:52.945603+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:52.945616+00:00   status: 200,
+2026-11-02T00:54:52.945625+00:00   body: {
+2026-11-02T00:54:52.945634+00:00     status: 'in_progress',
+2026-11-02T00:54:52.945643+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:52.945651+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:52.945662+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:52.945673+00:00   }
+2026-11-02T00:54:52.945683+00:00 }
+2026-11-02T00:54:52.947362+00:00  POST / 200 in 245ms (next.js: 5ms, proxy.ts: 7ms, application-code: 233ms)
+2026-11-02T00:54:52.947418+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 227ms generation/actions.ts
+2026-11-02T00:54:56.963381+00:00 [platform] request {
+2026-11-02T00:54:56.963458+00:00   method: 'GET',
+2026-11-02T00:54:56.963471+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:56.963587+00:00   body: null
+2026-11-02T00:54:56.963601+00:00 }
+2026-11-02T00:54:57.189143+00:00 [platform] response {
+2026-11-02T00:54:57.189229+00:00   method: 'GET',
+2026-11-02T00:54:57.189243+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:57.189258+00:00   status: 200,
+2026-11-02T00:54:57.189269+00:00   body: {
+2026-11-02T00:54:57.189279+00:00     status: 'in_progress',
+2026-11-02T00:54:57.189292+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:54:57.189304+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:54:57.189324+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:54:57.189337+00:00   }
+2026-11-02T00:54:57.189349+00:00 }
+2026-11-02T00:54:57.193455+00:00  POST / 200 in 241ms (next.js: 3ms, proxy.ts: 3ms, application-code: 236ms)
+2026-11-02T00:54:57.193502+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 228ms generation/actions.ts
+2026-11-02T00:55:01.213499+00:00 [platform] request {
+2026-11-02T00:55:01.213587+00:00   method: 'GET',
+2026-11-02T00:55:01.213600+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:01.213615+00:00   body: null
+2026-11-02T00:55:01.213634+00:00 }
+2026-11-02T00:55:01.446196+00:00 [platform] response {
+2026-11-02T00:55:01.446291+00:00   method: 'GET',
+2026-11-02T00:55:01.446305+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:01.446318+00:00   status: 200,
+2026-11-02T00:55:01.446328+00:00   body: {
+2026-11-02T00:55:01.446336+00:00     status: 'in_progress',
+2026-11-02T00:55:01.446345+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:01.446354+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:01.446365+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:01.446375+00:00   }
+2026-11-02T00:55:01.446385+00:00 }
+2026-11-02T00:55:01.449609+00:00  POST / 200 in 249ms (next.js: 3ms, proxy.ts: 3ms, application-code: 243ms)
+2026-11-02T00:55:01.449676+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 236ms generation/actions.ts
+2026-11-02T00:55:05.463403+00:00 [platform] request {
+2026-11-02T00:55:05.463487+00:00   method: 'GET',
+2026-11-02T00:55:05.463501+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:05.463517+00:00   body: null
+2026-11-02T00:55:05.463528+00:00 }
+2026-11-02T00:55:05.691029+00:00 [platform] response {
+2026-11-02T00:55:05.691140+00:00   method: 'GET',
+2026-11-02T00:55:05.691162+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:05.691178+00:00   status: 200,
+2026-11-02T00:55:05.691190+00:00   body: {
+2026-11-02T00:55:05.691203+00:00     status: 'in_progress',
+2026-11-02T00:55:05.691213+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:05.691227+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:05.691240+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:05.691253+00:00   }
+2026-11-02T00:55:05.691265+00:00 }
+2026-11-02T00:55:05.693433+00:00  POST / 200 in 239ms (next.js: 3ms, proxy.ts: 3ms, application-code: 233ms)
+2026-11-02T00:55:05.693494+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 228ms generation/actions.ts
+2026-11-02T00:55:09.708364+00:00 [platform] request {
+2026-11-02T00:55:09.708440+00:00   method: 'GET',
+2026-11-02T00:55:09.708455+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:09.708473+00:00   body: null
+2026-11-02T00:55:09.708485+00:00 }
+2026-11-02T00:55:09.929505+00:00 [platform] response {
+2026-11-02T00:55:09.929583+00:00   method: 'GET',
+2026-11-02T00:55:09.929598+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:09.929613+00:00   status: 200,
+2026-11-02T00:55:09.929625+00:00   body: {
+2026-11-02T00:55:09.929641+00:00     status: 'in_progress',
+2026-11-02T00:55:09.929655+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:09.929667+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:09.929680+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:09.929693+00:00   }
+2026-11-02T00:55:09.929705+00:00 }
+2026-11-02T00:55:09.932783+00:00  POST / 200 in 235ms (next.js: 2ms, proxy.ts: 3ms, application-code: 230ms)
+2026-11-02T00:55:09.932857+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 224ms generation/actions.ts
+2026-11-02T00:55:13.948339+00:00 [platform] request {
+2026-11-02T00:55:13.948417+00:00   method: 'GET',
+2026-11-02T00:55:13.948430+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:13.948444+00:00   body: null
+2026-11-02T00:55:13.948463+00:00 }
+2026-11-02T00:55:14.178195+00:00 [platform] response {
+2026-11-02T00:55:14.178273+00:00   method: 'GET',
+2026-11-02T00:55:14.178286+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:14.178301+00:00   status: 200,
+2026-11-02T00:55:14.178310+00:00   body: {
+2026-11-02T00:55:14.178320+00:00     status: 'in_progress',
+2026-11-02T00:55:14.178331+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:14.178341+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:14.178354+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:14.178367+00:00   }
+2026-11-02T00:55:14.178380+00:00 }
+2026-11-02T00:55:14.183290+00:00  POST / 200 in 244ms (next.js: 2ms, proxy.ts: 3ms, application-code: 238ms)
+2026-11-02T00:55:14.183351+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 231ms generation/actions.ts
+2026-11-02T00:55:18.196649+00:00 [platform] request {
+2026-11-02T00:55:18.196726+00:00   method: 'GET',
+2026-11-02T00:55:18.196738+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:18.196752+00:00   body: null
+2026-11-02T00:55:18.196762+00:00 }
+2026-11-02T00:55:18.434105+00:00 [platform] response {
+2026-11-02T00:55:18.434201+00:00   method: 'GET',
+2026-11-02T00:55:18.434212+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:18.434225+00:00   status: 200,
+2026-11-02T00:55:18.434234+00:00   body: {
+2026-11-02T00:55:18.434242+00:00     status: 'in_progress',
+2026-11-02T00:55:18.434251+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:18.434259+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:18.434269+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:18.434278+00:00   }
+2026-11-02T00:55:18.434286+00:00 }
+2026-11-02T00:55:18.436268+00:00  POST / 200 in 249ms (next.js: 3ms, proxy.ts: 2ms, application-code: 243ms)
+2026-11-02T00:55:18.436315+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 239ms generation/actions.ts
+2026-11-02T00:55:22.450878+00:00 [platform] request {
+2026-11-02T00:55:22.450953+00:00   method: 'GET',
+2026-11-02T00:55:22.450965+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:22.450978+00:00   body: null
+2026-11-02T00:55:22.450988+00:00 }
+2026-11-02T00:55:22.686801+00:00 [platform] response {
+2026-11-02T00:55:22.686875+00:00   method: 'GET',
+2026-11-02T00:55:22.686894+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:22.686907+00:00   status: 200,
+2026-11-02T00:55:22.686916+00:00   body: {
+2026-11-02T00:55:22.686926+00:00     status: 'in_progress',
+2026-11-02T00:55:22.686936+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:22.686949+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:22.686963+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:22.686972+00:00   }
+2026-11-02T00:55:22.686982+00:00 }
+2026-11-02T00:55:22.688719+00:00  POST / 200 in 248ms (next.js: 2ms, proxy.ts: 3ms, application-code: 242ms)
+2026-11-02T00:55:22.688764+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 238ms generation/actions.ts
+2026-11-02T00:55:26.710200+00:00 [platform] request {
+2026-11-02T00:55:26.710274+00:00   method: 'GET',
+2026-11-02T00:55:26.710286+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:26.710308+00:00   body: null
+2026-11-02T00:55:26.710317+00:00 }
+2026-11-02T00:55:26.944473+00:00 [platform] response {
+2026-11-02T00:55:26.944550+00:00   method: 'GET',
+2026-11-02T00:55:26.944562+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:26.944576+00:00   status: 200,
+2026-11-02T00:55:26.944585+00:00   body: {
+2026-11-02T00:55:26.944594+00:00     status: 'in_progress',
+2026-11-02T00:55:26.944604+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:26.944613+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:26.944625+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:26.944636+00:00   }
+2026-11-02T00:55:26.944646+00:00 }
+2026-11-02T00:55:26.948179+00:00  POST / 200 in 251ms (next.js: 2ms, proxy.ts: 6ms, application-code: 243ms)
+2026-11-02T00:55:26.948233+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 236ms generation/actions.ts
+2026-11-02T00:55:30.972559+00:00 [platform] request {
+2026-11-02T00:55:30.972640+00:00   method: 'GET',
+2026-11-02T00:55:30.972653+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:30.972667+00:00   body: null
+2026-11-02T00:55:30.972676+00:00 }
+2026-11-02T00:55:31.188848+00:00 [platform] response {
+2026-11-02T00:55:31.188935+00:00   method: 'GET',
+2026-11-02T00:55:31.188949+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:31.188965+00:00   status: 200,
+2026-11-02T00:55:31.188976+00:00   body: {
+2026-11-02T00:55:31.188986+00:00     status: 'in_progress',
+2026-11-02T00:55:31.188998+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:31.189008+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:31.189020+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:31.189032+00:00   }
+2026-11-02T00:55:31.189064+00:00 }
+2026-11-02T00:55:31.194035+00:00  POST / 200 in 242ms (next.js: 3ms, proxy.ts: 3ms, application-code: 236ms)
+2026-11-02T00:55:31.194106+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 222ms generation/actions.ts
+2026-11-02T00:55:35.230220+00:00 [platform] request {
+2026-11-02T00:55:35.230302+00:00   method: 'GET',
+2026-11-02T00:55:35.230317+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:35.230331+00:00   body: null
+2026-11-02T00:55:35.230347+00:00 }
+2026-11-02T00:55:35.441824+00:00 [platform] response {
+2026-11-02T00:55:35.441910+00:00   method: 'GET',
+2026-11-02T00:55:35.441924+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:35.441938+00:00   status: 200,
+2026-11-02T00:55:35.441948+00:00   body: {
+2026-11-02T00:55:35.441958+00:00     status: 'in_progress',
+2026-11-02T00:55:35.441967+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:35.441979+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:35.441990+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:35.442000+00:00   }
+2026-11-02T00:55:35.442010+00:00 }
+2026-11-02T00:55:35.443807+00:00  POST / 200 in 243ms (next.js: 13ms, proxy.ts: 8ms, application-code: 223ms)
+2026-11-02T00:55:35.443874+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 218ms generation/actions.ts
+2026-11-02T00:55:39.469685+00:00 [platform] request {
+2026-11-02T00:55:39.469773+00:00   method: 'GET',
+2026-11-02T00:55:39.469788+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:39.469813+00:00   body: null
+2026-11-02T00:55:39.469826+00:00 }
+2026-11-02T00:55:39.708755+00:00 [platform] response {
+2026-11-02T00:55:39.708861+00:00   method: 'GET',
+2026-11-02T00:55:39.708878+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:39.708893+00:00   status: 200,
+2026-11-02T00:55:39.708906+00:00   body: {
+2026-11-02T00:55:39.708918+00:00     status: 'in_progress',
+2026-11-02T00:55:39.708931+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:39.708944+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:39.708958+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:39.708972+00:00   }
+2026-11-02T00:55:39.708983+00:00 }
+2026-11-02T00:55:39.712085+00:00  POST / 200 in 263ms (next.js: 5ms, proxy.ts: 4ms, application-code: 254ms)
+2026-11-02T00:55:39.712146+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 245ms generation/actions.ts
+2026-11-02T00:55:43.728402+00:00 [platform] request {
+2026-11-02T00:55:43.728482+00:00   method: 'GET',
+2026-11-02T00:55:43.728495+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:43.728509+00:00   body: null
+2026-11-02T00:55:43.728519+00:00 }
+2026-11-02T00:55:43.947401+00:00 [platform] response {
+2026-11-02T00:55:43.947481+00:00   method: 'GET',
+2026-11-02T00:55:43.947494+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:43.947507+00:00   status: 200,
+2026-11-02T00:55:43.947516+00:00   body: {
+2026-11-02T00:55:43.947525+00:00     status: 'in_progress',
+2026-11-02T00:55:43.947534+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:43.947543+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:43.947552+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:43.947561+00:00   }
+2026-11-02T00:55:43.947570+00:00 }
+2026-11-02T00:55:43.949299+00:00  POST / 200 in 232ms (next.js: 1.9ms, proxy.ts: 3ms, application-code: 228ms)
+2026-11-02T00:55:43.949364+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 221ms generation/actions.ts
+2026-11-02T00:55:47.965705+00:00 [platform] request {
+2026-11-02T00:55:47.965788+00:00   method: 'GET',
+2026-11-02T00:55:47.965803+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:47.965819+00:00   body: null
+2026-11-02T00:55:47.965830+00:00 }
+2026-11-02T00:55:48.192112+00:00 [platform] response {
+2026-11-02T00:55:48.192203+00:00   method: 'GET',
+2026-11-02T00:55:48.192218+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:48.192233+00:00   status: 200,
+2026-11-02T00:55:48.192244+00:00   body: {
+2026-11-02T00:55:48.192256+00:00     status: 'in_progress',
+2026-11-02T00:55:48.192266+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:48.192282+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:48.192295+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:48.192307+00:00   }
+2026-11-02T00:55:48.192320+00:00 }
+2026-11-02T00:55:48.194280+00:00  POST / 200 in 239ms (next.js: 3ms, proxy.ts: 3ms, application-code: 233ms)
+2026-11-02T00:55:48.194361+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 228ms generation/actions.ts
+2026-11-02T00:55:52.215396+00:00 [platform] request {
+2026-11-02T00:55:52.215481+00:00   method: 'GET',
+2026-11-02T00:55:52.215497+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:52.215522+00:00   body: null
+2026-11-02T00:55:52.215535+00:00 }
+2026-11-02T00:55:52.434481+00:00 [platform] response {
+2026-11-02T00:55:52.434570+00:00   method: 'GET',
+2026-11-02T00:55:52.434586+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:52.434602+00:00   status: 200,
+2026-11-02T00:55:52.434613+00:00   body: {
+2026-11-02T00:55:52.434625+00:00     status: 'in_progress',
+2026-11-02T00:55:52.434637+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:52.434650+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:52.434664+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:52.434679+00:00   }
+2026-11-02T00:55:52.434690+00:00 }
+2026-11-02T00:55:52.441246+00:00  POST / 200 in 238ms (next.js: 3ms, proxy.ts: 4ms, application-code: 230ms)
+2026-11-02T00:55:52.441316+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 221ms generation/actions.ts
+2026-11-02T00:55:56.455231+00:00 [platform] request {
+2026-11-02T00:55:56.455300+00:00   method: 'GET',
+2026-11-02T00:55:56.455312+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:56.455326+00:00   body: null
+2026-11-02T00:55:56.455335+00:00 }
+2026-11-02T00:55:56.682372+00:00 [platform] response {
+2026-11-02T00:55:56.682465+00:00   method: 'GET',
+2026-11-02T00:55:56.682478+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:56.682493+00:00   status: 200,
+2026-11-02T00:55:56.682502+00:00   body: {
+2026-11-02T00:55:56.682511+00:00     status: 'in_progress',
+2026-11-02T00:55:56.682520+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:55:56.682530+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:55:56.682542+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:55:56.682553+00:00   }
+2026-11-02T00:55:56.682562+00:00 }
+2026-11-02T00:55:56.689178+00:00  POST / 200 in 241ms (next.js: 1.9ms, proxy.ts: 2ms, application-code: 236ms)
+2026-11-02T00:55:56.689252+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 229ms generation/actions.ts
+2026-11-02T00:56:00.706169+00:00 [platform] request {
+2026-11-02T00:56:00.706242+00:00   method: 'GET',
+2026-11-02T00:56:00.706254+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:00.706267+00:00   body: null
+2026-11-02T00:56:00.706276+00:00 }
+2026-11-02T00:56:00.933808+00:00 [platform] response {
+2026-11-02T00:56:00.933889+00:00   method: 'GET',
+2026-11-02T00:56:00.933902+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:00.933917+00:00   status: 200,
+2026-11-02T00:56:00.933927+00:00   body: {
+2026-11-02T00:56:00.933936+00:00     status: 'in_progress',
+2026-11-02T00:56:00.933946+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:00.933956+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:00.933967+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:00.933978+00:00   }
+2026-11-02T00:56:00.933988+00:00 }
+2026-11-02T00:56:00.943983+00:00  POST / 200 in 249ms (next.js: 2ms, proxy.ts: 4ms, application-code: 243ms)
+2026-11-02T00:56:00.944042+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 229ms generation/actions.ts
+2026-11-02T00:56:04.975220+00:00 [platform] request {
+2026-11-02T00:56:04.975302+00:00   method: 'GET',
+2026-11-02T00:56:04.975318+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:04.975344+00:00   body: null
+2026-11-02T00:56:04.975355+00:00 }
+2026-11-02T00:56:05.217399+00:00 [platform] response {
+2026-11-02T00:56:05.217487+00:00   method: 'GET',
+2026-11-02T00:56:05.217508+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:05.217524+00:00   status: 200,
+2026-11-02T00:56:05.217536+00:00   body: {
+2026-11-02T00:56:05.217547+00:00     status: 'in_progress',
+2026-11-02T00:56:05.217559+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:05.217571+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:05.217586+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:05.217600+00:00   }
+2026-11-02T00:56:05.217612+00:00 }
+2026-11-02T00:56:05.221858+00:00  POST / 200 in 269ms (next.js: 5ms, proxy.ts: 4ms, application-code: 261ms)
+2026-11-02T00:56:05.222066+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 245ms generation/actions.ts
+2026-11-02T00:56:09.239121+00:00 [platform] request {
+2026-11-02T00:56:09.239215+00:00   method: 'GET',
+2026-11-02T00:56:09.239228+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:09.239242+00:00   body: null
+2026-11-02T00:56:09.239253+00:00 }
+2026-11-02T00:56:09.475599+00:00 [platform] response {
+2026-11-02T00:56:09.475672+00:00   method: 'GET',
+2026-11-02T00:56:09.475684+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:09.475699+00:00   status: 200,
+2026-11-02T00:56:09.475709+00:00   body: {
+2026-11-02T00:56:09.475719+00:00     status: 'in_progress',
+2026-11-02T00:56:09.475729+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:09.475741+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:09.475760+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:09.475771+00:00   }
+2026-11-02T00:56:09.475783+00:00 }
+2026-11-02T00:56:09.477946+00:00  POST / 200 in 251ms (next.js: 4ms, proxy.ts: 3ms, application-code: 244ms)
+2026-11-02T00:56:09.478005+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 239ms generation/actions.ts
+2026-11-02T00:56:13.495179+00:00 [platform] request {
+2026-11-02T00:56:13.495256+00:00   method: 'GET',
+2026-11-02T00:56:13.495268+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:13.495283+00:00   body: null
+2026-11-02T00:56:13.495294+00:00 }
+2026-11-02T00:56:13.749644+00:00 [platform] response {
+2026-11-02T00:56:13.749733+00:00   method: 'GET',
+2026-11-02T00:56:13.749746+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:13.749761+00:00   status: 200,
+2026-11-02T00:56:13.749771+00:00   body: {
+2026-11-02T00:56:13.749781+00:00     status: 'in_progress',
+2026-11-02T00:56:13.749791+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:13.749804+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:13.749817+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:13.749828+00:00   }
+2026-11-02T00:56:13.749840+00:00 }
+2026-11-02T00:56:13.757072+00:00  POST / 200 in 273ms (next.js: 2ms, proxy.ts: 4ms, application-code: 267ms)
+2026-11-02T00:56:13.757147+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 257ms generation/actions.ts
+2026-11-02T00:56:17.788919+00:00 [platform] request {
+2026-11-02T00:56:17.788999+00:00   method: 'GET',
+2026-11-02T00:56:17.789014+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:17.789039+00:00   body: null
+2026-11-02T00:56:17.789051+00:00 }
+2026-11-02T00:56:18.031877+00:00 [platform] response {
+2026-11-02T00:56:18.031963+00:00   method: 'GET',
+2026-11-02T00:56:18.031978+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:18.031994+00:00   status: 200,
+2026-11-02T00:56:18.032004+00:00   body: {
+2026-11-02T00:56:18.032014+00:00     status: 'in_progress',
+2026-11-02T00:56:18.032026+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:18.032038+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:18.032050+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:18.032063+00:00   }
+2026-11-02T00:56:18.032075+00:00 }
+2026-11-02T00:56:18.034245+00:00  POST / 200 in 273ms (next.js: 5ms, proxy.ts: 9ms, application-code: 258ms)
+2026-11-02T00:56:18.034292+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 247ms generation/actions.ts
+2026-11-02T00:56:22.064313+00:00 [platform] request {
+2026-11-02T00:56:22.064393+00:00   method: 'GET',
+2026-11-02T00:56:22.064407+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:22.064421+00:00   body: null
+2026-11-02T00:56:22.064432+00:00 }
+2026-11-02T00:56:22.306786+00:00 [platform] response {
+2026-11-02T00:56:22.306865+00:00   method: 'GET',
+2026-11-02T00:56:22.306877+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:22.306890+00:00   status: 200,
+2026-11-02T00:56:22.306898+00:00   body: {
+2026-11-02T00:56:22.306913+00:00     status: 'in_progress',
+2026-11-02T00:56:22.306922+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:22.306931+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:22.306941+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:22.306951+00:00   }
+2026-11-02T00:56:22.306960+00:00 }
+2026-11-02T00:56:22.309380+00:00  POST / 200 in 268ms (next.js: 7ms, proxy.ts: 6ms, application-code: 255ms)
+2026-11-02T00:56:22.309441+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 246ms generation/actions.ts
+2026-11-02T00:56:26.323635+00:00 [platform] request {
+2026-11-02T00:56:26.323718+00:00   method: 'GET',
+2026-11-02T00:56:26.323731+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:26.323745+00:00   body: null
+2026-11-02T00:56:26.323754+00:00 }
+2026-11-02T00:56:26.551891+00:00 [platform] response {
+2026-11-02T00:56:26.551960+00:00   method: 'GET',
+2026-11-02T00:56:26.551974+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:26.551988+00:00   status: 200,
+2026-11-02T00:56:26.551998+00:00   body: {
+2026-11-02T00:56:26.552008+00:00     status: 'in_progress',
+2026-11-02T00:56:26.552018+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:26.552027+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:26.552039+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:26.552050+00:00   }
+2026-11-02T00:56:26.552060+00:00 }
+2026-11-02T00:56:26.554211+00:00  POST / 200 in 239ms (next.js: 1.9ms, proxy.ts: 2ms, application-code: 235ms)
+2026-11-02T00:56:26.554259+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 230ms generation/actions.ts
+2026-11-02T00:56:30.567334+00:00 [platform] request {
+2026-11-02T00:56:30.567413+00:00   method: 'GET',
+2026-11-02T00:56:30.567426+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:30.567448+00:00   body: null
+2026-11-02T00:56:30.567458+00:00 }
+2026-11-02T00:56:30.791932+00:00 [platform] response {
+2026-11-02T00:56:30.792008+00:00   method: 'GET',
+2026-11-02T00:56:30.792020+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:30.792033+00:00   status: 200,
+2026-11-02T00:56:30.792042+00:00   body: {
+2026-11-02T00:56:30.792051+00:00     status: 'in_progress',
+2026-11-02T00:56:30.792060+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:30.792070+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:30.792082+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:30.792092+00:00   }
+2026-11-02T00:56:30.792103+00:00 }
+2026-11-02T00:56:30.796038+00:00  POST / 200 in 238ms (next.js: 3ms, proxy.ts: 3ms, application-code: 232ms)
+2026-11-02T00:56:30.796099+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 226ms generation/actions.ts
+2026-11-02T00:56:34.809324+00:00 [platform] request {
+2026-11-02T00:56:34.809397+00:00   method: 'GET',
+2026-11-02T00:56:34.809408+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:34.809422+00:00   body: null
+2026-11-02T00:56:34.809433+00:00 }
+2026-11-02T00:56:35.038149+00:00 [platform] response {
+2026-11-02T00:56:35.038230+00:00   method: 'GET',
+2026-11-02T00:56:35.038251+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:35.038266+00:00   status: 200,
+2026-11-02T00:56:35.038276+00:00   body: {
+2026-11-02T00:56:35.038286+00:00     status: 'in_progress',
+2026-11-02T00:56:35.038295+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:35.038306+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:35.038318+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:35.038329+00:00   }
+2026-11-02T00:56:35.038340+00:00 }
+2026-11-02T00:56:35.040555+00:00  POST / 200 in 240ms (next.js: 2.0ms, proxy.ts: 3ms, application-code: 234ms)
+2026-11-02T00:56:35.040619+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 229ms generation/actions.ts
+2026-11-02T00:56:39.055506+00:00 [platform] request {
+2026-11-02T00:56:39.055581+00:00   method: 'GET',
+2026-11-02T00:56:39.055593+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:39.055606+00:00   body: null
+2026-11-02T00:56:39.055616+00:00 }
+2026-11-02T00:56:39.278007+00:00 [platform] response {
+2026-11-02T00:56:39.278086+00:00   method: 'GET',
+2026-11-02T00:56:39.278097+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:39.278111+00:00   status: 200,
+2026-11-02T00:56:39.278120+00:00   body: {
+2026-11-02T00:56:39.278137+00:00     status: 'in_progress',
+2026-11-02T00:56:39.278147+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:39.278156+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:39.278166+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:39.278177+00:00   }
+2026-11-02T00:56:39.278186+00:00 }
+2026-11-02T00:56:39.280201+00:00  POST / 200 in 235ms (next.js: 2ms, proxy.ts: 4ms, application-code: 229ms)
+2026-11-02T00:56:39.280260+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 224ms generation/actions.ts
+2026-11-02T00:56:43.316217+00:00 [platform] request {
+2026-11-02T00:56:43.316299+00:00   method: 'GET',
+2026-11-02T00:56:43.316313+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:43.316338+00:00   body: null
+2026-11-02T00:56:43.316349+00:00 }
+2026-11-02T00:56:43.565833+00:00 [platform] response {
+2026-11-02T00:56:43.565915+00:00   method: 'GET',
+2026-11-02T00:56:43.565928+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:43.565942+00:00   status: 200,
+2026-11-02T00:56:43.565951+00:00   body: {
+2026-11-02T00:56:43.565960+00:00     status: 'in_progress',
+2026-11-02T00:56:43.565969+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:43.565978+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:43.565990+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:43.566005+00:00   }
+2026-11-02T00:56:43.566014+00:00 }
+2026-11-02T00:56:43.572278+00:00  POST / 200 in 288ms (next.js: 9ms, proxy.ts: 13ms, application-code: 265ms)
+2026-11-02T00:56:43.572341+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 253ms generation/actions.ts
+2026-11-02T00:56:47.585728+00:00 [platform] request {
+2026-11-02T00:56:47.585807+00:00   method: 'GET',
+2026-11-02T00:56:47.585820+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:47.585834+00:00   body: null
+2026-11-02T00:56:47.585849+00:00 }
+2026-11-02T00:56:47.823399+00:00 [platform] response {
+2026-11-02T00:56:47.823493+00:00   method: 'GET',
+2026-11-02T00:56:47.823506+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:47.823522+00:00   status: 200,
+2026-11-02T00:56:47.823532+00:00   body: {
+2026-11-02T00:56:47.823541+00:00     status: 'in_progress',
+2026-11-02T00:56:47.823551+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:47.823562+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:47.823577+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:47.823591+00:00   }
+2026-11-02T00:56:47.823601+00:00 }
+2026-11-02T00:56:47.825546+00:00  POST / 200 in 249ms (next.js: 2ms, proxy.ts: 3ms, application-code: 243ms)
+2026-11-02T00:56:47.825615+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 239ms generation/actions.ts
+2026-11-02T00:56:51.840596+00:00 [platform] request {
+2026-11-02T00:56:51.840678+00:00   method: 'GET',
+2026-11-02T00:56:51.840689+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:51.840702+00:00   body: null
+2026-11-02T00:56:51.840711+00:00 }
+2026-11-02T00:56:52.066605+00:00 [platform] response {
+2026-11-02T00:56:52.066689+00:00   method: 'GET',
+2026-11-02T00:56:52.066702+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:52.066715+00:00   status: 200,
+2026-11-02T00:56:52.066724+00:00   body: {
+2026-11-02T00:56:52.066732+00:00     status: 'in_progress',
+2026-11-02T00:56:52.066741+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:52.066751+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:52.066762+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:52.066771+00:00   }
+2026-11-02T00:56:52.066780+00:00 }
+2026-11-02T00:56:52.076889+00:00  POST / 200 in 246ms (next.js: 1.8ms, proxy.ts: 3ms, application-code: 241ms)
+2026-11-02T00:56:52.076966+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 228ms generation/actions.ts
+2026-11-02T00:56:56.087928+00:00 [platform] request {
+2026-11-02T00:56:56.088003+00:00   method: 'GET',
+2026-11-02T00:56:56.088023+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:56.088036+00:00   body: null
+2026-11-02T00:56:56.088045+00:00 }
+2026-11-02T00:56:56.308813+00:00 [platform] response {
+2026-11-02T00:56:56.308902+00:00   method: 'GET',
+2026-11-02T00:56:56.308917+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:56.308930+00:00   status: 200,
+2026-11-02T00:56:56.308939+00:00   body: {
+2026-11-02T00:56:56.308948+00:00     status: 'in_progress',
+2026-11-02T00:56:56.308957+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:56:56.308966+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:56:56.308977+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:56:56.308988+00:00   }
+2026-11-02T00:56:56.308999+00:00 }
+2026-11-02T00:56:56.311473+00:00  POST / 200 in 232ms (next.js: 1.7ms, proxy.ts: 2ms, application-code: 228ms)
+2026-11-02T00:56:56.311521+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 223ms generation/actions.ts
+2026-11-02T00:57:00.328820+00:00 [platform] request {
+2026-11-02T00:57:00.328919+00:00   method: 'GET',
+2026-11-02T00:57:00.328933+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:00.328948+00:00   body: null
+2026-11-02T00:57:00.328959+00:00 }
+2026-11-02T00:57:00.548947+00:00 [platform] response {
+2026-11-02T00:57:00.549030+00:00   method: 'GET',
+2026-11-02T00:57:00.549045+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:00.549061+00:00   status: 200,
+2026-11-02T00:57:00.549072+00:00   body: {
+2026-11-02T00:57:00.549083+00:00     status: 'in_progress',
+2026-11-02T00:57:00.549095+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:00.549105+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:00.549116+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:00.549138+00:00   }
+2026-11-02T00:57:00.549151+00:00 }
+2026-11-02T00:57:00.555529+00:00  POST / 200 in 237ms (next.js: 2ms, proxy.ts: 3ms, application-code: 232ms)
+2026-11-02T00:57:00.555594+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 222ms generation/actions.ts
+2026-11-02T00:57:04.568760+00:00 [platform] request {
+2026-11-02T00:57:04.568838+00:00   method: 'GET',
+2026-11-02T00:57:04.568850+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:04.568863+00:00   body: null
+2026-11-02T00:57:04.568873+00:00 }
+2026-11-02T00:57:04.799576+00:00 [platform] response {
+2026-11-02T00:57:04.799656+00:00   method: 'GET',
+2026-11-02T00:57:04.799669+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:04.799682+00:00   status: 200,
+2026-11-02T00:57:04.799692+00:00   body: {
+2026-11-02T00:57:04.799701+00:00     status: 'in_progress',
+2026-11-02T00:57:04.799712+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:04.799720+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:04.799732+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:04.799742+00:00   }
+2026-11-02T00:57:04.799753+00:00 }
+2026-11-02T00:57:04.807017+00:00  POST / 200 in 248ms (next.js: 3ms, proxy.ts: 2ms, application-code: 244ms)
+2026-11-02T00:57:04.807073+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 233ms generation/actions.ts
+2026-11-02T00:57:08.820345+00:00 [platform] request {
+2026-11-02T00:57:08.820413+00:00   method: 'GET',
+2026-11-02T00:57:08.820433+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:08.820446+00:00   body: null
+2026-11-02T00:57:08.820455+00:00 }
+2026-11-02T00:57:09.058746+00:00 [platform] response {
+2026-11-02T00:57:09.058822+00:00   method: 'GET',
+2026-11-02T00:57:09.058835+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:09.058849+00:00   status: 200,
+2026-11-02T00:57:09.058858+00:00   body: {
+2026-11-02T00:57:09.058869+00:00     status: 'in_progress',
+2026-11-02T00:57:09.058879+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:09.058888+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:09.058900+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:09.058911+00:00   }
+2026-11-02T00:57:09.058921+00:00 }
+2026-11-02T00:57:09.060438+00:00  POST / 200 in 249ms (next.js: 3ms, proxy.ts: 2ms, application-code: 244ms)
+2026-11-02T00:57:09.060484+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 240ms generation/actions.ts
+2026-11-02T00:57:13.073489+00:00 [platform] request {
+2026-11-02T00:57:13.073568+00:00   method: 'GET',
+2026-11-02T00:57:13.073579+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:13.073602+00:00   body: null
+2026-11-02T00:57:13.073611+00:00 }
+2026-11-02T00:57:13.307905+00:00 [platform] response {
+2026-11-02T00:57:13.307985+00:00   method: 'GET',
+2026-11-02T00:57:13.307998+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:13.308011+00:00   status: 200,
+2026-11-02T00:57:13.308020+00:00   body: {
+2026-11-02T00:57:13.308028+00:00     status: 'in_progress',
+2026-11-02T00:57:13.308039+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:13.308050+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:13.308061+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:13.308070+00:00   }
+2026-11-02T00:57:13.308080+00:00 }
+2026-11-02T00:57:13.309937+00:00  POST / 200 in 245ms (next.js: 1.9ms, proxy.ts: 3ms, application-code: 240ms)
+2026-11-02T00:57:13.309999+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 236ms generation/actions.ts
+2026-11-02T00:57:17.324651+00:00 [platform] request {
+2026-11-02T00:57:17.324728+00:00   method: 'GET',
+2026-11-02T00:57:17.324740+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:17.324754+00:00   body: null
+2026-11-02T00:57:17.324763+00:00 }
+2026-11-02T00:57:17.537942+00:00 [platform] response {
+2026-11-02T00:57:17.538033+00:00   method: 'GET',
+2026-11-02T00:57:17.538045+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:17.538058+00:00   status: 200,
+2026-11-02T00:57:17.538067+00:00   body: {
+2026-11-02T00:57:17.538075+00:00     status: 'in_progress',
+2026-11-02T00:57:17.538084+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:17.538093+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:17.538104+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:17.538114+00:00   }
+2026-11-02T00:57:17.538123+00:00 }
+2026-11-02T00:57:17.539930+00:00  POST / 200 in 225ms (next.js: 2ms, proxy.ts: 4ms, application-code: 220ms)
+2026-11-02T00:57:17.539998+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 216ms generation/actions.ts
+2026-11-02T00:57:21.552652+00:00 [platform] request {
+2026-11-02T00:57:21.552724+00:00   method: 'GET',
+2026-11-02T00:57:21.552736+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:21.552749+00:00   body: null
+2026-11-02T00:57:21.552758+00:00 }
+2026-11-02T00:57:21.788435+00:00 [platform] response {
+2026-11-02T00:57:21.788507+00:00   method: 'GET',
+2026-11-02T00:57:21.788519+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:21.788531+00:00   status: 200,
+2026-11-02T00:57:21.788577+00:00   body: {
+2026-11-02T00:57:21.788588+00:00     status: 'in_progress',
+2026-11-02T00:57:21.788597+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:21.788606+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:21.788624+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:21.788634+00:00   }
+2026-11-02T00:57:21.788643+00:00 }
+2026-11-02T00:57:21.791038+00:00  POST / 200 in 246ms (next.js: 1.8ms, proxy.ts: 2.0ms, application-code: 243ms)
+2026-11-02T00:57:21.791099+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 238ms generation/actions.ts
+2026-11-02T00:57:25.804784+00:00 [platform] request {
+2026-11-02T00:57:25.804861+00:00   method: 'GET',
+2026-11-02T00:57:25.804873+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:25.804886+00:00   body: null
+2026-11-02T00:57:25.804895+00:00 }
+2026-11-02T00:57:26.031584+00:00 [platform] response {
+2026-11-02T00:57:26.031658+00:00   method: 'GET',
+2026-11-02T00:57:26.031669+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:26.031682+00:00   status: 200,
+2026-11-02T00:57:26.031691+00:00   body: {
+2026-11-02T00:57:26.031700+00:00     status: 'in_progress',
+2026-11-02T00:57:26.031709+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:26.031719+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:26.031730+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:26.031741+00:00   }
+2026-11-02T00:57:26.031751+00:00 }
+2026-11-02T00:57:26.036920+00:00  POST / 200 in 241ms (next.js: 1.9ms, proxy.ts: 3ms, application-code: 236ms)
+2026-11-02T00:57:26.036965+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 229ms generation/actions.ts
+2026-11-02T00:57:30.053624+00:00 [platform] request {
+2026-11-02T00:57:30.053697+00:00   method: 'GET',
+2026-11-02T00:57:30.053710+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:30.053724+00:00   body: null
+2026-11-02T00:57:30.053734+00:00 }
+2026-11-02T00:57:30.285108+00:00 [platform] response {
+2026-11-02T00:57:30.285204+00:00   method: 'GET',
+2026-11-02T00:57:30.285218+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:30.285233+00:00   status: 200,
+2026-11-02T00:57:30.285244+00:00   body: {
+2026-11-02T00:57:30.285255+00:00     status: 'in_progress',
+2026-11-02T00:57:30.285268+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:30.285278+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:30.285291+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:30.285303+00:00   }
+2026-11-02T00:57:30.285314+00:00 }
+2026-11-02T00:57:30.287433+00:00  POST / 200 in 245ms (next.js: 3ms, proxy.ts: 5ms, application-code: 238ms)
+2026-11-02T00:57:30.287506+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 234ms generation/actions.ts
+2026-11-02T00:57:34.301061+00:00 [platform] request {
+2026-11-02T00:57:34.301148+00:00   method: 'GET',
+2026-11-02T00:57:34.301160+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:34.301173+00:00   body: null
+2026-11-02T00:57:34.301182+00:00 }
+2026-11-02T00:57:34.535663+00:00 [platform] response {
+2026-11-02T00:57:34.535743+00:00   method: 'GET',
+2026-11-02T00:57:34.535756+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:34.535770+00:00   status: 200,
+2026-11-02T00:57:34.535779+00:00   body: {
+2026-11-02T00:57:34.535794+00:00     status: 'in_progress',
+2026-11-02T00:57:34.535807+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:34.535816+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:34.535827+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:34.535837+00:00   }
+2026-11-02T00:57:34.535847+00:00 }
+2026-11-02T00:57:34.538728+00:00  POST / 200 in 246ms (next.js: 1.6ms, proxy.ts: 3ms, application-code: 242ms)
+2026-11-02T00:57:34.538794+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 238ms generation/actions.ts
+2026-11-02T00:57:38.556559+00:00 [platform] request {
+2026-11-02T00:57:38.556635+00:00   method: 'GET',
+2026-11-02T00:57:38.556647+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:38.556661+00:00   body: null
+2026-11-02T00:57:38.556679+00:00 }
+2026-11-02T00:57:38.790512+00:00 [platform] response {
+2026-11-02T00:57:38.790596+00:00   method: 'GET',
+2026-11-02T00:57:38.790609+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:38.790623+00:00   status: 200,
+2026-11-02T00:57:38.790632+00:00   body: {
+2026-11-02T00:57:38.790640+00:00     status: 'in_progress',
+2026-11-02T00:57:38.790649+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:38.790658+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:38.790670+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:38.790680+00:00   }
+2026-11-02T00:57:38.790690+00:00 }
+2026-11-02T00:57:38.793406+00:00  POST / 200 in 248ms (next.js: 4ms, proxy.ts: 3ms, application-code: 242ms)
+2026-11-02T00:57:38.793455+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 236ms generation/actions.ts
+2026-11-02T00:57:42.810005+00:00 [platform] request {
+2026-11-02T00:57:42.810090+00:00   method: 'GET',
+2026-11-02T00:57:42.810149+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:42.810167+00:00   body: null
+2026-11-02T00:57:42.810180+00:00 }
+2026-11-02T00:57:43.040346+00:00 [platform] response {
+2026-11-02T00:57:43.040423+00:00   method: 'GET',
+2026-11-02T00:57:43.040438+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:43.040454+00:00   status: 200,
+2026-11-02T00:57:43.040466+00:00   body: {
+2026-11-02T00:57:43.040479+00:00     status: 'in_progress',
+2026-11-02T00:57:43.040492+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:43.040505+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:43.040519+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:43.040532+00:00   }
+2026-11-02T00:57:43.040545+00:00 }
+2026-11-02T00:57:43.042930+00:00  POST / 200 in 245ms (next.js: 1.9ms, proxy.ts: 2ms, application-code: 241ms)
+2026-11-02T00:57:43.042999+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 234ms generation/actions.ts
+2026-11-02T00:57:47.055897+00:00 [platform] request {
+2026-11-02T00:57:47.055986+00:00   method: 'GET',
+2026-11-02T00:57:47.055998+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:47.056012+00:00   body: null
+2026-11-02T00:57:47.056021+00:00 }
+2026-11-02T00:57:47.324139+00:00 [platform] response {
+2026-11-02T00:57:47.324221+00:00   method: 'GET',
+2026-11-02T00:57:47.324240+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:47.324255+00:00   status: 200,
+2026-11-02T00:57:47.324265+00:00   body: {
+2026-11-02T00:57:47.324273+00:00     status: 'in_progress',
+2026-11-02T00:57:47.324285+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:47.324294+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:47.324304+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:47.324314+00:00   }
+2026-11-02T00:57:47.324324+00:00 }
+2026-11-02T00:57:47.331393+00:00  POST / 200 in 284ms (next.js: 3ms, proxy.ts: 2ms, application-code: 279ms)
+2026-11-02T00:57:47.331462+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 270ms generation/actions.ts
+2026-11-02T00:57:51.351548+00:00 [platform] request {
+2026-11-02T00:57:51.351638+00:00   method: 'GET',
+2026-11-02T00:57:51.351651+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:51.351666+00:00   body: null
+2026-11-02T00:57:51.351676+00:00 }
+2026-11-02T00:57:51.583285+00:00 [platform] response {
+2026-11-02T00:57:51.583367+00:00   method: 'GET',
+2026-11-02T00:57:51.583381+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:51.583396+00:00   status: 200,
+2026-11-02T00:57:51.583406+00:00   body: {
+2026-11-02T00:57:51.583415+00:00     status: 'in_progress',
+2026-11-02T00:57:51.583425+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:51.583436+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:51.583448+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:51.583459+00:00   }
+2026-11-02T00:57:51.583470+00:00 }
+2026-11-02T00:57:51.585665+00:00  POST / 200 in 247ms (next.js: 2ms, proxy.ts: 3ms, application-code: 241ms)
+2026-11-02T00:57:51.585739+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 235ms generation/actions.ts
+2026-11-02T00:57:55.624438+00:00 [platform] request {
+2026-11-02T00:57:55.624548+00:00   method: 'GET',
+2026-11-02T00:57:55.624564+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:55.624582+00:00   body: null
+2026-11-02T00:57:55.624596+00:00 }
+2026-11-02T00:57:55.848931+00:00 [platform] response {
+2026-11-02T00:57:55.849020+00:00   method: 'GET',
+2026-11-02T00:57:55.849035+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:55.849052+00:00   status: 200,
+2026-11-02T00:57:55.849063+00:00   body: {
+2026-11-02T00:57:55.849074+00:00     status: 'in_progress',
+2026-11-02T00:57:55.849086+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:57:55.849099+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:55.849111+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:57:55.849143+00:00   }
+2026-11-02T00:57:55.849156+00:00 }
+2026-11-02T00:57:55.851269+00:00  POST / 200 in 254ms (next.js: 5ms, proxy.ts: 12ms, application-code: 237ms)
+2026-11-02T00:57:55.851328+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 226ms generation/actions.ts
+2026-11-02T00:57:59.866860+00:00 [platform] request {
+2026-11-02T00:57:59.866942+00:00   method: 'GET',
+2026-11-02T00:57:59.866955+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:57:59.866968+00:00   body: null
+2026-11-02T00:57:59.866993+00:00 }
+2026-11-02T00:58:00.100148+00:00 [platform] response {
+2026-11-02T00:58:00.100238+00:00   method: 'GET',
+2026-11-02T00:58:00.100254+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:00.100271+00:00   status: 200,
+2026-11-02T00:58:00.100283+00:00   body: {
+2026-11-02T00:58:00.100295+00:00     status: 'in_progress',
+2026-11-02T00:58:00.100308+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:58:00.100321+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:00.100335+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:58:00.100347+00:00   }
+2026-11-02T00:58:00.100360+00:00 }
+2026-11-02T00:58:00.107561+00:00  POST / 200 in 251ms (next.js: 2ms, proxy.ts: 3ms, application-code: 245ms)
+2026-11-02T00:58:00.107630+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 235ms generation/actions.ts
+2026-11-02T00:58:04.120768+00:00 [platform] request {
+2026-11-02T00:58:04.120855+00:00   method: 'GET',
+2026-11-02T00:58:04.120867+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:04.120880+00:00   body: null
+2026-11-02T00:58:04.120889+00:00 }
+2026-11-02T00:58:04.360934+00:00 [platform] response {
+2026-11-02T00:58:04.361023+00:00   method: 'GET',
+2026-11-02T00:58:04.361038+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:04.361053+00:00   status: 200,
+2026-11-02T00:58:04.361064+00:00   body: {
+2026-11-02T00:58:04.361073+00:00     status: 'in_progress',
+2026-11-02T00:58:04.361086+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:58:04.361095+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:04.361107+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:58:04.361119+00:00   }
+2026-11-02T00:58:04.361139+00:00 }
+2026-11-02T00:58:04.363176+00:00  POST / 200 in 251ms (next.js: 3ms, proxy.ts: 3ms, application-code: 246ms)
+2026-11-02T00:58:04.363241+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 242ms generation/actions.ts
+2026-11-02T00:58:08.379123+00:00 [platform] request {
+2026-11-02T00:58:08.379228+00:00   method: 'GET',
+2026-11-02T00:58:08.379243+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:08.379301+00:00   body: null
+2026-11-02T00:58:08.379316+00:00 }
+2026-11-02T00:58:08.607877+00:00 [platform] response {
+2026-11-02T00:58:08.607968+00:00   method: 'GET',
+2026-11-02T00:58:08.607982+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:08.607998+00:00   status: 200,
+2026-11-02T00:58:08.608009+00:00   body: {
+2026-11-02T00:58:08.608022+00:00     status: 'in_progress',
+2026-11-02T00:58:08.608036+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:58:08.608047+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:08.608061+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:58:08.608075+00:00   }
+2026-11-02T00:58:08.608087+00:00 }
+2026-11-02T00:58:08.610309+00:00  POST / 200 in 242ms (next.js: 2ms, proxy.ts: 3ms, application-code: 238ms)
+2026-11-02T00:58:08.610350+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 232ms generation/actions.ts
+2026-11-02T00:58:12.648271+00:00 [platform] request {
+2026-11-02T00:58:12.648361+00:00   method: 'GET',
+2026-11-02T00:58:12.648373+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:12.648389+00:00   body: null
+2026-11-02T00:58:12.648399+00:00 }
+2026-11-02T00:58:12.885476+00:00 [platform] response {
+2026-11-02T00:58:12.885561+00:00   method: 'GET',
+2026-11-02T00:58:12.885574+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:12.885588+00:00   status: 200,
+2026-11-02T00:58:12.885598+00:00   body: {
+2026-11-02T00:58:12.885606+00:00     status: 'in_progress',
+2026-11-02T00:58:12.885617+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:58:12.885626+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:12.885638+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:58:12.885649+00:00   }
+2026-11-02T00:58:12.885659+00:00 }
+2026-11-02T00:58:12.891824+00:00  POST / 200 in 272ms (next.js: 6ms, proxy.ts: 6ms, application-code: 260ms)
+2026-11-02T00:58:12.891872+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 243ms generation/actions.ts
+2026-11-02T00:58:16.905672+00:00 [platform] request {
+2026-11-02T00:58:16.905767+00:00   method: 'GET',
+2026-11-02T00:58:16.905780+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:16.905794+00:00   body: null
+2026-11-02T00:58:16.905804+00:00 }
+2026-11-02T00:58:17.136205+00:00 [platform] response {
+2026-11-02T00:58:17.136286+00:00   method: 'GET',
+2026-11-02T00:58:17.136298+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:17.136312+00:00   status: 200,
+2026-11-02T00:58:17.136321+00:00   body: {
+2026-11-02T00:58:17.136329+00:00     status: 'in_progress',
+2026-11-02T00:58:17.136338+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:58:17.136347+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:17.136357+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel'
+2026-11-02T00:58:17.136367+00:00   }
+2026-11-02T00:58:17.136375+00:00 }
+2026-11-02T00:58:17.139818+00:00  POST / 200 in 243ms (next.js: 3ms, proxy.ts: 2ms, application-code: 238ms)
+2026-11-02T00:58:17.139875+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 232ms generation/actions.ts
+2026-11-02T00:58:21.153702+00:00 [platform] request {
+2026-11-02T00:58:21.153787+00:00   method: 'GET',
+2026-11-02T00:58:21.153802+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:21.153818+00:00   body: null
+2026-11-02T00:58:21.153830+00:00 }
+2026-11-02T00:58:21.383667+00:00 [platform] response {
+2026-11-02T00:58:21.383754+00:00   method: 'GET',
+2026-11-02T00:58:21.383768+00:00   url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:21.383783+00:00   status: 200,
+2026-11-02T00:58:21.383793+00:00   body: {
+2026-11-02T00:58:21.383802+00:00     status: 'completed',
+2026-11-02T00:58:21.383812+00:00     request_id: '01a199bf-aa59-79c3-b7d5-00825fc7fd4e',
+2026-11-02T00:58:21.383821+00:00     status_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/status',
+2026-11-02T00:58:21.383832+00:00     cancel_url: 'https://api.higgsfield.ai/requests/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/cancel',
+2026-11-02T00:58:21.383842+00:00     expires_at: '2026-11-09T00:58:17.553800+00:00',
+2026-11-02T00:58:21.383852+00:00     video: {
+2026-11-02T00:58:21.383862+00:00       url: 'https://d3u0tzju9qaucj.cloudfront.net/a4086dbb-d386-4bab-8efd-636d1f91e38e/01a199bf-aa59-79c3-b7d5-00825fc7fd4e/b547305b-d8b4-4cf8-a08c-26c690098f7f.mp4'
+2026-11-02T00:58:21.383891+00:00     }
+2026-11-02T00:58:21.383900+00:00   }
+2026-11-02T00:58:21.383909+00:00 }
+2026-11-02T00:58:21.386819+00:00  POST / 200 in 243ms (next.js: 3ms, proxy.ts: 3ms, application-code: 237ms)
+2026-11-02T00:58:21.386872+00:00   └─ ƒ getGenerationStatuses({"requestIds":["01a199bf-aa59-79c3-b7d5-00825fc7fd4e"]}) in 231ms generation/actions.ts
