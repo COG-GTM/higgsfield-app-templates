@@ -171,3 +171,29 @@ test("reference mode rejects empty input and never ignores incompatible media", 
   assert.throws(() => toPlatform(plane(seedance25, { audio: items("audio", 1) }, { inputMode: "frames" })), /not supported/i);
   assert.throws(() => toPlatform(plane(seedance25, {}, { inputMode: "unknown" })), /input mode/i);
 });
+
+const { genjutsuMotionTransfer, genjutsuObjectSwap } = await import("../generation/catalog/models/genjutsu.ts");
+
+test("Genjutsu sends one source video, image references, and resolution", () => {
+  for (const [model, path] of [
+    [genjutsuMotionTransfer, "higgsfield/genjutsu/motion-transfer/v1.0"],
+    [genjutsuObjectSwap, "higgsfield/genjutsu/object-swap/v1.0"],
+  ]) {
+    const request = toPlatform(plane(model, { source: items("source", 1), reference: items("reference", 8) }, { settings: { resolution: "1080p" } }));
+    assert.equal(request.path, path);
+    assert.deepEqual(request.body, {
+      video_url: items("source", 1)[0].url,
+      image_urls: items("reference", 8).map((item) => item.url),
+      prompt: "A cinematic scene",
+      resolution: "1080p",
+    });
+  }
+});
+
+test("Genjutsu requires a source video and at least one image reference", () => {
+  for (const model of [genjutsuMotionTransfer, genjutsuObjectSwap]) {
+    assert.throws(() => toPlatform(plane(model, { reference: items("reference", 1) })), /source video/i);
+    assert.throws(() => toPlatform(plane(model, { source: items("source", 1) })), /reference/i);
+    assert.equal(toPlatform(plane(model, { source: items("source", 1), reference: items("reference", 1) }, { prompt: { text: "" } })).body.prompt, "");
+  }
+});
