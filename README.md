@@ -58,7 +58,12 @@ pnpm dlx shadcn@latest add    higgsfield-ai/app-templates/models          # all 
 pnpm dlx shadcn@latest add    higgsfield-ai/app-templates/kling-3 --overwrite   # refresh
 ```
 
-Pin a version with `#ref`: `higgsfield-ai/app-templates/studio#v1.0.0`.
+Pin a git ref with `#ref`. The repo has no release tags yet and short SHAs do
+not resolve, so use a full commit SHA for a repeatable install, e.g.
+`higgsfield-ai/app-templates/kling-3#<40-char-sha>` (a branch such as `#main`
+also works but follows its tip). The `studio` item's `registryDependencies`
+(`studio-bare`, `models`) carry no ref, so pinning `studio` does not pin them;
+pin `studio-bare` and each model instead.
 
 ## Environment
 
@@ -70,16 +75,25 @@ Pin a version with `#ref`: `higgsfield-ai/app-templates/studio#v1.0.0`.
 
 ## Working on the templates
 
+Needs pnpm and Node.js 22.18+ (`pnpm test` imports `.ts` sources directly, which
+fails on earlier Node versions).
+
 ```sh
 git clone git@github.com:higgsfield-ai/app-templates.git
-cd app-templates && pnpm install && cp .env.example .env && pnpm dev
+cd app-templates
+pnpm install --registry=https://registry.npmjs.org/
+cp .env.example .env && pnpm dev
 ```
+
+`.npmrc` points pnpm at Higgsfield's internal registry mirror
+(`socket.higgsfield.xyz`), so a plain `pnpm install` hangs off that network. On
+the Higgsfield network you can drop the `--registry` flag.
 
 | Command               | What it does                                                    |
 | --------------------- | --------------------------------------------------------------- |
-| `pnpm dev`            | Dev server on :3000 (also serves the built registry at `/r/*`) |
+| `pnpm dev`            | Dev server on :3000 (serves `/r/*` once `registry:build` ran)   |
 | `pnpm typecheck`      | `tsc --noEmit`                                                  |
-| `pnpm test`           | Credentials, uploads, and model input tests (Node.js 22.15+)    |
+| `pnpm test`           | Credentials, uploads, and model input tests (Node.js 22.18+)    |
 | `pnpm models`         | Regenerate the models barrel and `models/registry.json`         |
 | `pnpm registry:build` | `pnpm models` + `shadcn build` → `public/r/*.json`              |
 | `pnpm build`          | Production build (runs `registry:build` first)                  |
@@ -89,7 +103,8 @@ Add a model: create `generation/catalog/models/<name>.ts` with a default export
 `pnpm exec shadcn registry validate ./registry.json`. Commit and push; GitHub
 addresses resolve against the default branch.
 
-Test the registry locally from another directory:
+Test the registry locally from another directory. `public/r/` is not committed,
+so run `pnpm registry:build` first or `/r/*` returns 404:
 
 ```sh
 pnpm dlx shadcn@latest list http://localhost:3000/r/registry.json
