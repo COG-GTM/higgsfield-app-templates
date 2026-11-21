@@ -58,7 +58,9 @@ pnpm dlx shadcn@latest add    higgsfield-ai/app-templates/models          # all 
 pnpm dlx shadcn@latest add    higgsfield-ai/app-templates/kling-3 --overwrite   # refresh
 ```
 
-Pin a version with `#ref`: `higgsfield-ai/app-templates/studio#v1.0.0`.
+Pin a git ref with `#ref`: a branch or full commit SHA, e.g.
+`higgsfield-ai/app-templates/studio#main`. The repo has no release tags yet, and
+short SHAs do not resolve.
 
 ## Environment
 
@@ -70,14 +72,20 @@ Pin a version with `#ref`: `higgsfield-ai/app-templates/studio#v1.0.0`.
 
 ## Working on the templates
 
+Needs pnpm and Node.js 22.15+ (`pnpm test` fails to load the `.ts` sources on Node 20).
+
 ```sh
 git clone git@github.com:higgsfield-ai/app-templates.git
 cd app-templates && pnpm install && cp .env.example .env && pnpm dev
 ```
 
+`.npmrc` points pnpm at Higgsfield's internal registry mirror
+(`socket.higgsfield.xyz`), so off that network `pnpm install` hangs. Use the
+public registry instead: `pnpm install --registry=https://registry.npmjs.org/`.
+
 | Command               | What it does                                                    |
 | --------------------- | --------------------------------------------------------------- |
-| `pnpm dev`            | Dev server on :3000 (also serves the built registry at `/r/*`) |
+| `pnpm dev`            | Dev server on :3000 (serves `/r/*` once `registry:build` ran)   |
 | `pnpm typecheck`      | `tsc --noEmit`                                                  |
 | `pnpm test`           | Credentials, uploads, and model input tests (Node.js 22.15+)    |
 | `pnpm models`         | Regenerate the models barrel and `models/registry.json`         |
@@ -89,7 +97,8 @@ Add a model: create `generation/catalog/models/<name>.ts` with a default export
 `pnpm exec shadcn registry validate ./registry.json`. Commit and push; GitHub
 addresses resolve against the default branch.
 
-Test the registry locally from another directory:
+Test the registry locally from another directory. `public/r/` is not committed,
+so run `pnpm registry:build` first or `/r/*` returns 404:
 
 ```sh
 pnpm dlx shadcn@latest list http://localhost:3000/r/registry.json
